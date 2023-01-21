@@ -44,7 +44,8 @@
     "sourceFolder": "webapp",
     "targetFolder": "dist",
     "excludedFolders": [],
-    "excludedFiles": []
+    "excludedFiles": [],
+    "lastBuildDateTime": "Sat, 21 Jan 2023 15:19:35 GMT"
   },
   "mockpreview": {
     "mockUri": "/sap/opu/odata/sap/ZPZ_UI5_EMPLOYEE_PORTAL_SRV",
@@ -52,5 +53,9 @@
     "loadJSONFiles": false,
     "loadCustomRequests": false,
     "mockRequestsFilePath": ""
+  },
+  "deploy": {
+    "destination": "S62",
+    "name": "Z05_Genehmigung"
   }
 }
