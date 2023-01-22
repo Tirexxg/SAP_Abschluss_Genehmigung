@@ -1,11 +1,11 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"Urlaubsgenehmigung/model/models"
+	"countriesCountryList/model/models"
 ], function(UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("Urlaubsgenehmigung.Component", {
+	return UIComponent.extend("countriesCountryList.Component", {
 
 		metadata: {
 			manifest: "json"

@@ -17,7 +17,7 @@
     {
       "templateId": "servicecatalog.connectivityComponent",
       "templateVersion": "0.0.0",
-      "dateTimeStamp": "Sun, 22 Jan 2023 14:25:08 GMT"
+      "dateTimeStamp": "Sun, 22 Jan 2023 17:27:54 GMT"
     }
   ],
   "codeCheckingTriggers": {
@@ -40,7 +40,7 @@
     }
   },
   "build": {
-    "buildRequired": false,
+    "buildRequired": true,
     "sourceFolder": "webapp",
     "targetFolder": "dist",
     "excludedFolders": [],
@@ -48,7 +48,7 @@
     "lastBuildDateTime": "Sun, 22 Jan 2023 15:42:54 GMT"
   },
   "mockpreview": {
-    "mockUri": "/sap/opu/odata/sap/ZPZ_UI5_EMPLOYEE_PORTAL_SRV",
+    "mockUri": "/sap/opu/odata/sap/Z05_UI5_EMPLOYEE_PORTAL_SRV",
     "metadataFilePath": "",
     "loadJSONFiles": false,
     "loadCustomRequests": false,

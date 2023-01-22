@@ -1,5 +1,5 @@
 <mvc:View 
-	controllerName="Urlaubsgenehmigung.controller.MainView" 
+	controllerName="countriesCountryList.controller.MainView" 
 	xmlns:html="http://www.w3.org/1999/xhtml" 
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true" 

@@ -14,12 +14,12 @@
 			"version": "0.0.0"
 		},
 		"dataSources": {
-			"ZPZ_UI5_EMPLOYEE_PORTAL_SRV": {
-				"uri": "/sap/opu/odata/sap/ZPZ_UI5_EMPLOYEE_PORTAL_SRV/",
+			"Z05_UI5_EMPLOYEE_PORTAL_SRV": {
+				"uri": "/sap/opu/odata/sap/Z05_UI5_EMPLOYEE_PORTAL_SRV/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
-					"localUri": "localService/metadata.xml"
+					"localUri": "localService/Z05_UI5_EMPLOYEE_PORTAL_SRV/metadata.xml"
 				}
 			}
 		}
@@ -46,7 +46,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "Urlaubsgenehmigung.view.MainView",
+			"viewName": "countriesCountryList.view.MainView",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -69,7 +69,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "Urlaubsgenehmigung.i18n.i18n",
+					"bundleName": "countriesCountryList.i18n.i18n",
 					"bundleUrl": "i18n/i18n.properties",
 					"supportedLanguages": [
 						"en",
@@ -93,7 +93,7 @@
 		"routing": {
 			"config": {
 				"routerClass": "sap.m.routing.Router",
-				"viewPath": "Urlaubsgenehmigung.view",
+				"viewPath": "countriesCountryList.view",
 				"controlId": "app",
 				"controlAggregation": "pages",
 				"async": true
@@ -140,7 +140,7 @@
 		}
 	},
 	"sap.platform.abap": {
-		"uri": "/sap/bc/ui5_ui5/sap/z05_genehmigung/webapp",
+		"uri": "/sap/bc/ui5_ui5/sap/z05_countrylist/webapp",
 		"_version": "1.1.0"
 	}
 }

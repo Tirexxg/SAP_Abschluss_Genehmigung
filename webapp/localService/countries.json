@@ -1,0 +1,140 @@
+{
+  "countries": [
+    {
+      "name": "Angola",
+      "short": "AO",
+      "detailInfo": {
+        "capital": "Luanda",
+        "population": "18498000",
+        "HumanDevelopmentIndex": "L",
+        "area": "1246700",
+        "areaUnit": "sq km",
+        "currency": "AOA",
+        "flagUrl": "img/AO.png"
+       },
+	   "cities": [
+    	 {
+        	"name": "Luanda",
+        	"population": "2776125",
+        	"area": "113",
+        	"areaUnit": "sq km"
+    	},
+    	{
+        	"name": "Huambo",
+        	 "population": "226177",
+        	 "area": "2609",
+        	 "areaUnit": "sq km"
+    	}
+	  ]
+   },
+    {
+      "name": "Germany",
+      "short": "DE",
+      "detailInfo": {
+        "capital": "Berlin",
+        "population": "80585700",
+        "HumanDevelopmentIndex": "V",
+        "area": "357168",
+        "areaUnit": "sq km",
+        "currency": "EUR",
+        "flagUrl": "img/DE.png"
+      },
+      "cities": [
+        {
+          "name": "Berlin",
+          "population": "3460725",
+          "area": "887",
+          "areaUnit": "sq km"
+        },
+        {
+          "name": "Hamburg",
+          "population": "1786448",
+          "area": "755",
+          "areaUnit": "sq km"
+        }
+      ]
+    },
+    {
+      "name": "Jordan",
+      "short": "JO",
+      "detailInfo": {
+        "capital": "Amman",
+        "population": "6508887",
+        "HumanDevelopmentIndex": "M",
+        "area": "89342",
+        "areaUnit": "sq km",
+        "currency": "JOD",
+        "flagUrl": "img/JO.png"
+      },
+      "cities": [
+        {
+          "name": "Amman",
+          "population": "1919000",
+          "area": "1680",
+          "areaUnit": "sq km"
+        },
+        {
+          "name": "Irbid",
+          "population": "1088100",
+          "area": "30",
+          "areaUnit": "sq km"
+        }
+      ]      
+    },
+    {
+      "name": "United Kingdom",
+      "short": "UK",
+      "detailInfo": {
+        "capital": "London",
+        "population": "63705000",
+        "HumanDevelopmentIndex": "V",
+        "area": "243610",
+        "areaUnit": "sq km",
+        "currency": "GBP",
+        "flagUrl": "img/UK.png"
+      },
+      "cities": [
+        {
+          "name": "London",
+          "population": "8308369",
+          "area": "1572",
+          "areaUnit": "sq km"
+        },
+        {
+          "name": "Birmingham",
+          "population": "1085400",
+          "area": "267",
+          "areaUnit": "sq km"
+        }
+      ]
+      
+    },
+    {
+      "name": "United States of America",
+      "short": "US",
+      "detailInfo": {
+        "capital": "Washington, D.C.",
+        "population": "317643000",
+        "HumanDevelopmentIndex": "V",
+        "area": "9826675",
+        "areaUnit": "sq km",
+        "currency": "USD",
+        "flagUrl": "img/US.png"
+      },
+      "cities": [
+        {
+          "name": "New York",
+          "population": "8336697",
+          "area": "783",
+          "areaUnit": "sq km"
+        },
+        {
+          "name": "Los Angeles",
+          "population": "3857799",
+          "area": "1213",
+          "areaUnit": "sq km"
+        }
+      ]      
+    }
+  ]
+}

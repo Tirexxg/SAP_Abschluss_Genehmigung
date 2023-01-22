@@ -1,10 +1,10 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"Urlaubsgenehmigung/model/formatter"
+	"countriesCountryList/model/formatter"
 ], function (Controller, formatter) {
 	"use strict";
 	
-	return Controller.extend("Urlaubsgenehmigung.controller.DetailView", {
+	return Controller.extend("countriesCountryList.controller.DetailView", {
 	formatter: formatter,
 	
 			onInit: function() {

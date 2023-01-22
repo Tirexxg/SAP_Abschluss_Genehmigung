@@ -3,7 +3,7 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:semantic="sap.m.semantic"
-	controllerName="Urlaubsgenehmigung.controller.DetailView"
+	controllerName="countriesCountryList.controller.DetailView"
 	xmlns:html="http://w3.org/1999/xhtml">
 	
 	<semantic:DetailPage title="{i18n>titleDetail}" id="DetailPage" showNavButton="{device>/system/phone}" navButtonPress="onDetailBack">
@@ -50,3 +50,54 @@
 		
 	</semantic:DetailPage>
 </mvc:View>
+<!--<mvc:View
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:semantic="sap.m.semantic"
+    controllerName="countriesCountryList.controller.DetailView"
+    xmlns:html="http://w3.org/1999/xhtml">
+    
+    <semantic:DetailPage title="{i18n>titleDetail}" id="DetailPage" showNavButton="{device>/system/phone}" navButtonPress="onDetailBack">
+        <ObjectHeader title="{countryModel>name}" number="{countryModel>detailInfo/area}" numberUnit="{countryModel>detailInfo/areaUnit}">
+            <attributes>
+                <ObjectAttribute text="{countryModel>short}"/>
+            </attributes>
+            <statuses>
+                <ObjectStatus
+                    text="{ path: 'countryModel>detailInfo/HumanDevelopmentIndex',formatter: '.formatter.statusText'}"
+                    state="{ path: 'countryModel>detailInfo/HumanDevelopmentIndex',formatter: '.formatter.statusState'}"/>
+            </statuses>
+        </ObjectHeader>
+            
+        <IconTabBar expanded="true" id="idIconTabBar" select="onSelectChanged">
+            <items>
+                <IconTabFilter icon="sap-icon://activity-items" key="countryDetails">
+                    <Table headerText="{i18n>cities}" items="{countryModel>cities}">
+						<columns>
+							<Column>
+								<header><Label text="{i18n>name}"/></header>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
+								<header><Label text="{i18n>population}"/></header>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
+								<header><Label text="{i18n>area}"/></header>
+							</Column>
+						</columns>
+						<ColumnListItem type="Navigation" press="onListItemPress">
+							<cells>
+								<ObjectIdentifier title="{countryModel>name}"/>
+								<Text text= "{countryModel>population}"/>
+								<ObjectNumber number="{countryModel>area}" unit="{countryModel>areaUnit}"/>
+							</cells>
+						</ColumnListItem>
+					</Table>
+                </IconTabFilter>
+                <IconTabFilter icon="sap-icon://flag" key="countryFlag">
+                    <Image src="{countryModel>detailInfo/flagUrl}" alt="Country Flag"/>
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+    </semantic:DetailPage>
+</mvc:View>-->
