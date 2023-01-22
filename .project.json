@@ -40,12 +40,12 @@
     }
   },
   "build": {
-    "buildRequired": true,
+    "buildRequired": false,
     "sourceFolder": "webapp",
     "targetFolder": "dist",
     "excludedFolders": [],
     "excludedFiles": [],
-    "lastBuildDateTime": "Sat, 21 Jan 2023 15:44:20 GMT"
+    "lastBuildDateTime": "Sun, 22 Jan 2023 15:42:54 GMT"
   },
   "mockpreview": {
     "mockUri": "/sap/opu/odata/sap/ZPZ_UI5_EMPLOYEE_PORTAL_SRV",
