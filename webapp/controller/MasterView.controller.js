@@ -5,9 +5,40 @@ sap.ui.define([
 	
 	return Controller.extend("genehmigung.controller.MasterView", {
 		
-		onInit: function() {
-			var oModel = this.getOwnerComponent().getModel();
-		},
+onInit: function () {
+        var oList = this.byId("absenceList");
+        var oModel = this.getOwnerComponent().getModel();
+        oList.bindItems({
+            path: "/AbsenceSet",
+            template: new sap.m.ObjectListItem({
+                title: "{Username}",
+                attributes: [
+                    new sap.m.ObjectAttribute({
+                        text: {
+                            path: "StartDate",
+                            formatter: function (startDate) {
+                                var oDateFormat = sap.ui.core.format.DateFormat.getDateInstance({ pattern: "dd.MM.yyyy" });
+                                return "Beginn: "+oDateFormat.format(new Date(startDate));
+                            }
+                        }
+                    }),
+                    new sap.m.ObjectAttribute({
+                        text: {
+                            path: "EndDate",
+                            formatter: function (endDate) {
+                                var oDateFormat = sap.ui.core.format.DateFormat.getDateInstance({ pattern: "dd.MM.yyyy" });
+                                return "Ende: "+oDateFormat.format(new Date(endDate));
+                            }
+                        }
+                    })
+                ]
+            })
+        });
+        oList.setModel(oModel);
+    },
+
+
+
 		
 		onListPressed: function(oEvent){
 			var sPath = oEvent.getSource().getSelectedItem().getBindingContext("countryModel").getPath();
