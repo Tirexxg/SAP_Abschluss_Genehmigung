@@ -3,7 +3,7 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:semantic="sap.m.semantic"
-	controllerName="countriesCountryList.controller.MasterView"
+	controllerName="genehmigung.controller.MasterView"
 	xmlns:html="http://w3.org/1999/xhtml">
 	
 	<semantic:MasterPage title="{i18n>titleMaster}" id="MasterPage">

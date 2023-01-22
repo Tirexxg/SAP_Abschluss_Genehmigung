@@ -46,7 +46,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "countriesCountryList.view.MainView",
+			"viewName": "genehmigung.view.MainView",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -69,7 +69,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "countriesCountryList.i18n.i18n",
+					"bundleName": "genehmigung.i18n.i18n",
 					"bundleUrl": "i18n/i18n.properties",
 					"supportedLanguages": [
 						"en",
@@ -89,7 +89,7 @@
 		"routing": {
 			"config": {
 				"routerClass": "sap.m.routing.Router",
-				"viewPath": "countriesCountryList.view",
+				"viewPath": "genehmigung.view",
 				"controlId": "app",
 				"controlAggregation": "pages",
 				"async": true

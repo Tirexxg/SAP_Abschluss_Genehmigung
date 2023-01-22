@@ -4,7 +4,7 @@ sap.ui.define([
 ], function(Controller, JSONModel) {
 	"use strict";
 
-	return Controller.extend("countriesCountryList.controller.MainView", {
+	return Controller.extend("genehmigung.controller.MainView", {
 		onInit: function () {
 			this.getView().setModel(new JSONModel(), "app");
 		}

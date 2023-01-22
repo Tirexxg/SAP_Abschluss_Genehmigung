@@ -3,7 +3,7 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:semantic="sap.m.semantic"
-	controllerName="countriesCountryList.controller.DetailView"
+	controllerName="genehmigung.controller.DetailView"
 	xmlns:html="http://w3.org/1999/xhtml">
 	
 	<semantic:DetailPage title="{i18n>titleDetail}" id="DetailPage" showNavButton="{device>/system/phone}" navButtonPress="onDetailBack">
@@ -55,7 +55,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:semantic="sap.m.semantic"
-    controllerName="countriesCountryList.controller.DetailView"
+    controllerName="genehmigung.controller.DetailView"
     xmlns:html="http://w3.org/1999/xhtml">
     
     <semantic:DetailPage title="{i18n>titleDetail}" id="DetailPage" showNavButton="{device>/system/phone}" navButtonPress="onDetailBack">
