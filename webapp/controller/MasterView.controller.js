@@ -6,7 +6,7 @@ sap.ui.define([
 	
 	return Controller.extend("genehmigung.controller.MasterView", {
 		
-onInit: function () {
+	onInit: function () {
 		//Import für i18n Sprachen
 		var i18nModel = new ResourceModel({
             bundleName: "genehmigung.i18n.i18n"
@@ -47,11 +47,21 @@ onInit: function () {
         });
         oList.setModel(oModel);
     },
+    
+    onSearch: function(oEvent) {
+	    var sValue = oEvent.getParameter("query");
+	    var oFilter = new sap.ui.model.Filter("Username", sap.ui.model.FilterOperator.Contains, sValue);
+	    var oBinding = this.byId("absenceList").getBinding("items");
+	    oBinding.filter([oFilter]);
+	},
+	
+	onRefresh: function() {
+	    var oBinding = this.byId("absenceList").getBinding("items");
+	    oBinding.filter([]);
+	    oBinding.refresh();
+	},
 
-
-
-		
-		onListPressed: function(oEvent){
+	onListPressed: function(oEvent){
 			var sPath = oEvent.getSource().getSelectedItem().getBindingContext("countryModel").getPath();
 			var aContext = sPath.split("/");
 		
