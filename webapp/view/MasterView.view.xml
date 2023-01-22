@@ -1,0 +1,39 @@
+<mvc:View
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:semantic="sap.m.semantic"
+	controllerName="Urlaubsgenehmigung.controller.MasterView"
+	xmlns:html="http://w3.org/1999/xhtml">
+	
+	<semantic:MasterPage title="{i18n>titleMaster}" id="MasterPage">
+		<Toolbar>
+    		<SearchField id="searchField" width="100%" search="onSearch"></SearchField>
+    		<!-- Other Toolbar items -->
+		</Toolbar>
+
+		<List mode="SingleSelectMaster" selectionChange="onListPressed" items="{countryModel>/countries}">
+			<ObjectListItem
+				title="{countryModel>name} ({countryModel>short})"
+				number="{countryModel>detailInfo/area}"
+				numberUnit="{countryModel>detailInfo/areaUnit}">
+				<attributes>
+					<ObjectAttribute text="{countryModel>short{}"/> 
+				</attributes>
+				
+				<firstStatus>
+					<ObjectStatus
+						text="{
+							path: 'countryModel>detailInfo/HumanDevelopmentIndex',
+							formatter: '.formatter.statusText'
+						}"
+						state="{
+							path: 'countryModel>detailInfo/HumanDevelopmentIndex',
+							formatter: '.formatter.statusState'
+						}"
+					/>
+				</firstStatus>
+			</ObjectListItem>
+		</List>
+	</semantic:MasterPage>
+</mvc:View>

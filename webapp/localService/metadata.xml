@@ -1,10 +1,10 @@
-<edmx:Edmx Version="1.0"
+<edmx:Edmx
     xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
     xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-    xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
     <edmx:DataServices m:DataServiceVersion="2.0">
-        <Schema Namespace="Z05_UI5_EMPLOYEE_PORTAL_SRV" xml:lang="de" sap:schema-version="1"
-            xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <Schema
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZPZ_UI5_EMPLOYEE_PORTAL_SRV" xml:lang="de" sap:schema-version="1">
             <EntityType Name="Subscription" sap:semantics="subscriptions" sap:content-version="1">
                 <Key>
                     <PropertyRef Name="ID"/>
@@ -118,22 +118,22 @@
                 <Property Name="StatusKey" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="StatusText" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Kurzbeschreibung" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
             </EntityType>
-            <EntityContainer Name="Z05_UI5_EMPLOYEE_PORTAL_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
-                <EntitySet Name="SubscriptionCollection" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.Subscription" sap:content-version="1"/>
-                <EntitySet Name="NotificationCollection" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.Notification" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false" sap:content-version="1"/>
-                <EntitySet Name="UserSet" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.User" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
-                <EntitySet Name="TimesheetSet" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.Timesheet" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
-                <EntitySet Name="TaskSet" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.Task" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
-                <EntitySet Name="ProjectSet" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.Project" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
-                <EntitySet Name="CustomerSet" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.Customer" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
-                <EntitySet Name="AbsenceSet" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.Absence" sap:updatable="false" sap:searchable="true" sap:pageable="false" sap:requires-filter="true" sap:content-version="1"/>
-                <EntitySet Name="AbsenceTypesSet" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.AbsenceTypes" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
-                <EntitySet Name="StatusTypesSet" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.StatusTypes" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+            <EntityContainer Name="ZPZ_UI5_EMPLOYEE_PORTAL_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="SubscriptionCollection" EntityType="ZPZ_UI5_EMPLOYEE_PORTAL_SRV.Subscription" sap:content-version="1"/>
+                <EntitySet Name="NotificationCollection" EntityType="ZPZ_UI5_EMPLOYEE_PORTAL_SRV.Notification" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="UserSet" EntityType="ZPZ_UI5_EMPLOYEE_PORTAL_SRV.User" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="TimesheetSet" EntityType="ZPZ_UI5_EMPLOYEE_PORTAL_SRV.Timesheet" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="TaskSet" EntityType="ZPZ_UI5_EMPLOYEE_PORTAL_SRV.Task" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="ProjectSet" EntityType="ZPZ_UI5_EMPLOYEE_PORTAL_SRV.Project" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="CustomerSet" EntityType="ZPZ_UI5_EMPLOYEE_PORTAL_SRV.Customer" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="AbsenceSet" EntityType="ZPZ_UI5_EMPLOYEE_PORTAL_SRV.Absence" sap:updatable="false" sap:searchable="true" sap:pageable="false" sap:requires-filter="true" sap:content-version="1"/>
+                <EntitySet Name="AbsenceTypesSet" EntityType="ZPZ_UI5_EMPLOYEE_PORTAL_SRV.AbsenceTypes" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="StatusTypesSet" EntityType="ZPZ_UI5_EMPLOYEE_PORTAL_SRV.StatusTypes" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
             </EntityContainer>
-            <atom:link rel="self" href="./sap/Z05_UI5_EMPLOYEE_PORTAL_SRV/$metadata"
-                xmlns:atom="http://www.w3.org/2005/Atom"/>
-                <atom:link rel="latest-version" href="./sap/Z05_UI5_EMPLOYEE_PORTAL_SRV/$metadata"
-                    xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link
+                xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZPZ_UI5_EMPLOYEE_PORTAL_SRV/$metadata"/>
+                <atom:link
+                    xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZPZ_UI5_EMPLOYEE_PORTAL_SRV/$metadata"/>
                 </Schema>
             </edmx:DataServices>
         </edmx:Edmx>

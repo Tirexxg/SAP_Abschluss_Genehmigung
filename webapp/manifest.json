@@ -1,7 +1,7 @@
 {
 	"_version": "1.7.0",
 	"sap.app": {
-		"id": "Genehmigungen",
+		"id": "Urlaubsgenehmigung",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -14,20 +14,12 @@
 			"version": "0.0.0"
 		},
 		"dataSources": {
-			"Z05_UI5_EMPLOYEE_PORTAL_SRV": {
-				"uri": "/sap/opu/odata/sap/Z05_UI5_EMPLOYEE_PORTAL_SRV/",
-				"type": "OData",
-				"settings": {
-					"odataVersion": "2.0",
-					"localUri": "localService/metadata.xml"
-				}
-			},
 			"ZPZ_UI5_EMPLOYEE_PORTAL_SRV": {
 				"uri": "/sap/opu/odata/sap/ZPZ_UI5_EMPLOYEE_PORTAL_SRV/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
-					"localUri": "localService/ZPZ_UI5_EMPLOYEE_PORTAL_SRV/metadata.xml"
+					"localUri": "localService/metadata.xml"
 				}
 			}
 		}
@@ -54,18 +46,18 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "Urlaubsantraege.view.mainView",
+			"viewName": "Urlaubsgenehmigung.view.MainView",
 			"type": "XML"
 		},
 		"dependencies": {
 			"minUI5Version": "1.30.0",
 			"libs": {
-				"sap.collaboration": {},
-				"sap.m": {},
-				"sap.ui.comp": {},
 				"sap.ui.core": {},
+				"sap.m": {},
 				"sap.ui.layout": {},
 				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
 				"sap.uxap": {}
 			}
 		},
@@ -77,18 +69,72 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "Urlaubsantraege.i18n.i18n"
+					"bundleName": "Urlaubsgenehmigung.i18n.i18n",
+					"bundleUrl": "i18n/i18n.properties",
+					"supportedLanguages": [
+						"en",
+						"de"
+					],
+					"fallbackLocale": "de"
 				}
 			},
-			"": {
-				"dataSource": "Z05_UI5_EMPLOYEE_PORTAL_SRV",
-				"preload": true
+			"countryModel": {
+				"settings": {},
+				"dataSource": "countries"
 			}
 		},
 		"resources": {
 			"css": [
 				{
 					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewPath": "Urlaubsgenehmigung.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"async": true
+			},
+			"targets": {
+				"master": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "MasterView",
+					"viewLevel": 1,
+					"controlAggregation": "masterPages"
+				},
+				"detail": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "DetailView",
+					"viewLevel": 2,
+					"controlAggregation": "detailPages"
+				}
+			},
+			"routes": [
+				{
+					"name": "master",
+					"pattern": "",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"master",
+						"detail"
+					]
+				},
+				{
+					"name": "detail",
+					"pattern": "detail/{context}/{index}",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"detail"
+					]
 				}
 			]
 		}
