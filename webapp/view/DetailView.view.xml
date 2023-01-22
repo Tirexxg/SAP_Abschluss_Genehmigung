@@ -20,33 +20,17 @@
 		
 		<IconTabBar expanded="true" id="idIconTabBar" select="onSelectChanged">
 			<items>
-				<IconTabFilter icon="sap-icon://activity-items" key="countryDetails">
-					<Table headerText="{i18n>cities}" items="{countryModel>cities}">
-						<columns>
-							<Column>
-								<header><Label text="{i18n>name}"/></header>
-							</Column>
-							<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
-								<header><Label text="{i18n>population}"/></header>
-							</Column>
-							<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
-								<header><Label text="{i18n>area}"/></header>
-							</Column>
-						</columns>
-						<ColumnListItem type="Navigation" press="onListItemPress">
-							<cells>
-								<ObjectIdentifier title="{countryModel>name}"/>
-								<Text text= "{countryModel>population}"/>
-								<ObjectNumber number="{countryModel>area}" unit="{countryModel>areaUnit}"/>
-							</cells>
-						</ColumnListItem>
-					</Table>
+				<IconTabFilter icon="sap-icon://hint" key="antragDetails">
+					
 				</IconTabFilter>
-				<IconTabFilter icon="sap-icon://flag" key= "countryFlag">
-					<Image src="{countryModel>detailInfo/flagUrl}" alt="Country Flag"/>
+				<IconTabFilter icon="sap-icon://person-placeholder" key= "personDetails">
+					
 				</IconTabFilter>
 			</items>
 		</IconTabBar>
-		
+		<semantic:customFooterContent>
+						<Button press="onAcceptDialogPress" icon="sap-icon://accept" type="Accept" />
+						<Button press="onRejectDialogPress" icon="sap-icon://decline" type="Reject" />
+				</semantic:customFooterContent>
 	</semantic:DetailPage>
 </mvc:View>

@@ -77,6 +77,10 @@
 					],
 					"fallbackLocale": "de"
 				}
+			},
+			"": {
+				"dataSource": "Z05_UI5_EMPLOYEE_PORTAL_SRV",
+				"preload": true
 			}
 		},
 		"resources": {

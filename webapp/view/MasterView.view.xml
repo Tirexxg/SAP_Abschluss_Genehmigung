@@ -10,28 +10,7 @@
 		<Toolbar>
 			<SearchField id = "searchField" width = "100%" search = "onSearch" > </SearchField>
 		</Toolbar>
-		<List mode="SingleSelectMaster" selectionChange="onListPressed" items="{countryModel>/countries}">
-			<ObjectListItem
-				title="{countryModel>name} ({countryModel>short})"
-				number="{countryModel>detailInfo/area}"
-				numberUnit="{countryModel>detailInfo/areaUnit}">
-				<attributes>
-					<ObjectAttribute text="{countryModel>short{}"/> 
-				</attributes>
-				
-				<firstStatus>
-					<ObjectStatus
-						text="{
-							path: 'countryModel>detailInfo/HumanDevelopmentIndex',
-							formatter: '.formatter.statusText'
-						}"
-						state="{
-							path: 'countryModel>detailInfo/HumanDevelopmentIndex',
-							formatter: '.formatter.statusState'
-						}"
-					/>
-				</firstStatus>
-			</ObjectListItem>
-		</List>
+        <List id="absenceList">
+        </List>
 	</semantic:MasterPage>
 </mvc:View>
