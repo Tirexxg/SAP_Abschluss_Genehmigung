@@ -1,36 +1,8 @@
-<mvc:View
-	xmlns:core="sap.ui.core"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m"
-	xmlns:semantic="sap.m.semantic"
-	controllerName="genehmigung.controller.DetailView"
-	xmlns:html="http://w3.org/1999/xhtml">
-	
-	<semantic:DetailPage title="{i18n>titleDetail}" id="DetailPage" showNavButton="{device>/system/phone}" navButtonPress="onDetailBack">
-        <ObjectHeader title="{countryModel>name}" number="{countryModel>detailInfo/area}" numberUnit="{countryModel>detailInfo/areaUnit}">
-            <attributes>
-                <ObjectAttribute text="{countryModel>short}"/>
-            </attributes>
-            <statuses>
-                <ObjectStatus
-                    text="{ path: 'countryModel>detailInfo/HumanDevelopmentIndex',formatter: '.formatter.statusText'}"
-                    state="{ path: 'countryModel>detailInfo/HumanDevelopmentIndex',formatter: '.formatter.statusState'}"/>
-            </statuses>
-        </ObjectHeader>
-		
-		<IconTabBar expanded="true" id="idIconTabBar" select="onSelectChanged">
-			<items>
-				<IconTabFilter icon="sap-icon://hint" key="antragDetails">
-					
-				</IconTabFilter>
-				<IconTabFilter icon="sap-icon://person-placeholder" key= "personDetails">
-					
-				</IconTabFilter>
-			</items>
-		</IconTabBar>
-		<semantic:customFooterContent>
-						<Button press="onAcceptDialogPress" icon="sap-icon://accept" type="Accept" width="6em"/>
-						<Button press="onRejectDialogPress" icon="sap-icon://decline" type="Reject" width="6em"/>
-				</semantic:customFooterContent>
-	</semantic:DetailPage>
+<mvc:View controllerName="genehmigung.controller.DetailView" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page title="{i18n>detailTitle}">
+        <content>
+            <Text id="flag" text="{ReqId}" />
+            <Text text="{ReqId}" />
+        </content>
+    </Page>
 </mvc:View>

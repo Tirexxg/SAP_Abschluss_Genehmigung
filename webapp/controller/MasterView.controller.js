@@ -60,15 +60,17 @@ sap.ui.define([
 	    oBinding.filter([]);
 	    oBinding.refresh();
 	},
+	onListPressed: function(oEvent) {
+		    var oSelectedItem = oEvent.getParameter("listItem");
+		console.log(oSelectedItem);
+		var oContext = oSelectedItem.getBindingContext();
+				console.log(oContext);
+		var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+		oRouter.navTo("detail", {
+		ReqId: oContext.getProperty("ReqId"),
+		StartDate: oContext.getProperty("StartDate")
+});
+}
 
-	onListPressed: function(oEvent){
-			var sPath = oEvent.getSource().getSelectedItem().getBindingContext("countryModel").getPath();
-			var aContext = sPath.split("/");
-		
-			this.getOwnerComponent().getRouter().navTo("detail",{
-				context: aContext[1],
-				index: aContext[2]
-			});
-		}
 	});
 });

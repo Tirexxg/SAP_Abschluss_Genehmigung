@@ -19,7 +19,7 @@
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
-					"localUri": "localService/Z05_UI5_EMPLOYEE_PORTAL_SRV/metadata.xml"
+					"localUri": "localService/metadata.xml"
 				}
 			}
 		}
@@ -129,12 +129,10 @@
 				},
 				{
 					"name": "detail",
-					"pattern": "detail/{context}/{index}",
+					"pattern": "detail/{ReqId}",
 					"titleTarget": "",
 					"greedy": false,
-					"target": [
-						"detail"
-					]
+					"target": "detail"
 				}
 			]
 		}

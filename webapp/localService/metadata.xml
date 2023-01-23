@@ -1,10 +1,10 @@
-<edmx:Edmx
+<edmx:Edmx Version="1.0"
     xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
     xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-    xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+    xmlns:sap="http://www.sap.com/Protocols/SAPData">
     <edmx:DataServices m:DataServiceVersion="2.0">
-        <Schema
-            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="Z05_UI5_EMPLOYEE_PORTAL_SRV" xml:lang="de" sap:schema-version="1">
+        <Schema Namespace="Z05_UI5_EMPLOYEE_PORTAL_SRV" xml:lang="de" sap:schema-version="1"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
             <EntityType Name="Subscription" sap:semantics="subscriptions" sap:content-version="1">
                 <Key>
                     <PropertyRef Name="ID"/>
@@ -96,12 +96,13 @@
                     <PropertyRef Name="Username"/>
                     <PropertyRef Name="ReqId"/>
                 </Key>
+                <Property Name="ReqDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false"/>
                 <Property Name="Username" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Benutzer" sap:creatable="false" sap:updatable="false"/>
                 <Property Name="ReqId" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="GUID" sap:creatable="false" sap:updatable="false"/>
                 <Property Name="StartDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="aktuelles Datum"/>
                 <Property Name="EndDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="aktuelles Datum"/>
                 <Property Name="Type" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false"/>
-                <Property Name="Description" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false"/>
+                <Property Name="Description" Type="Edm.String" Nullable="false" MaxLength="128" sap:unicode="false"/>
                 <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false"/>
             </EntityType>
             <EntityType Name="AbsenceTypes" sap:content-version="1">
@@ -130,10 +131,10 @@
                 <EntitySet Name="AbsenceTypesSet" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.AbsenceTypes" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
                 <EntitySet Name="StatusTypesSet" EntityType="Z05_UI5_EMPLOYEE_PORTAL_SRV.StatusTypes" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
             </EntityContainer>
-            <atom:link
-                xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/Z05_UI5_EMPLOYEE_PORTAL_SRV/$metadata"/>
-                <atom:link
-                    xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/Z05_UI5_EMPLOYEE_PORTAL_SRV/$metadata"/>
+            <atom:link rel="self" href="./sap/Z05_UI5_EMPLOYEE_PORTAL_SRV/$metadata"
+                xmlns:atom="http://www.w3.org/2005/Atom"/>
+                <atom:link rel="latest-version" href="./sap/Z05_UI5_EMPLOYEE_PORTAL_SRV/$metadata"
+                    xmlns:atom="http://www.w3.org/2005/Atom"/>
                 </Schema>
             </edmx:DataServices>
         </edmx:Edmx>

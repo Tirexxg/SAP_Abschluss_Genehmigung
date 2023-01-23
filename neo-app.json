@@ -6,8 +6,7 @@
       "target": {
         "type": "service",
         "name": "sapui5",
-        "entryPath": "/resources",
-        "version": "1.52.13"
+        "entryPath": "/resources"
       },
       "description": "SAPUI5 Resources"
     },
