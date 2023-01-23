@@ -29,8 +29,8 @@
 			</items>
 		</IconTabBar>
 		<semantic:customFooterContent>
-						<Button press="onAcceptDialogPress" icon="sap-icon://accept" type="Accept" />
-						<Button press="onRejectDialogPress" icon="sap-icon://decline" type="Reject" />
+						<Button press="onAcceptDialogPress" icon="sap-icon://accept" type="Accept" width="6em"/>
+						<Button press="onRejectDialogPress" icon="sap-icon://decline" type="Reject" width="6em"/>
 				</semantic:customFooterContent>
 	</semantic:DetailPage>
 </mvc:View>

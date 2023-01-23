@@ -140,7 +140,7 @@
 		}
 	},
 	"sap.platform.abap": {
-		"uri": "/sap/bc/ui5_ui5/sap/z05_countrylist/webapp",
+		"uri": "/sap/bc/ui5_ui5/sap/z05_genehmigung/webapp",
 		"_version": "1.1.0"
 	}
 }
