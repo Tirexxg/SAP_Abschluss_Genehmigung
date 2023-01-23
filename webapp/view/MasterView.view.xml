@@ -11,7 +11,7 @@
 			<SearchField id = "searchField" width = "100%" search = "onSearch" > </SearchField>
 			<Button id="refreshButton" icon="sap-icon://refresh" press="onRefresh" />
 		</Toolbar>
-        <List id="absenceList">
+        <List id="absenceList" mode="SingleSelectMaster" selectionChange="onListPressed">
         </List>
 	</semantic:MasterPage>
 </mvc:View>
