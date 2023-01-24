@@ -1,27 +1,8 @@
 <mvc:View controllerName="genehmigung.controller.DetailView" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-    <Page title="{i18n>Antragdetails}">
+    <Page title="{i18n>titleDetail>">
         <content>
             <Text id="flag" text="{ReqId}" />
             <Text text="{ReqId}" />
-            <IconTabBar expanded="true" id="idIconTabBar" select="onSelectChanged">
-			    <items>
-				    <IconTabFilter icon="sap-icon://hint" key="antragDetails"></IconTabFilter>
-				    <IconTabFilter icon="sap-icon://person-placeholder" key="personDetails">
-					    <List id="list">
-                            <StandardListItem title="{i18n>Username}" description="Daten einfügen">
-                            </StandardListItem>
-                            <StandardListItem title="{i18n>Name}" description="Daten einfügen">
-                            </StandardListItem>
-                            <StandardListItem title="{i18n>Department}" description="Daten einfügen">
-                            </StandardListItem>
-                            <StandardListItem title="{i18n>Function}" description="Daten einfügen">
-                            </StandardListItem>
-                            <StandardListItem title="{i18n>E-Mail}" description="Daten einfügen">
-                            </StandardListItem>
-					    </List>
-				    </IconTabFilter>
-			    </items>
-		    </IconTabBar>
         </content>
     </Page>
 </mvc:View>

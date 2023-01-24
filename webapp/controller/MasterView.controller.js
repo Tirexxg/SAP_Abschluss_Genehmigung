@@ -24,6 +24,25 @@ sap.ui.define([
             template: new sap.m.ObjectListItem({
                 title: "{Username}",
                 attributes: [
+                	    new sap.m.ObjectAttribute({
+                        text: {
+                            path: "ReqDate",
+                            formatter: function (reqDate) {
+                                var oDateFormat = sap.ui.core.format.DateFormat.getDateInstance({ pattern: "dd.MM.yyyy" });
+                                return "Requestdate: "+oDateFormat.format(new Date(reqDate));
+                            }
+                        }
+                    }),
+                     new sap.m.ObjectAttribute({
+                        text: {
+                            path: "Description"
+                        }
+                    }),
+                     new sap.m.ObjectAttribute({
+                        text: {
+                            path: "Status"
+                        }
+                    }),
                     new sap.m.ObjectAttribute({
                         text: {
                             path: "StartDate",
