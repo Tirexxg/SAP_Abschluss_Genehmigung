@@ -1,5 +1,5 @@
 <mvc:View controllerName="genehmigung.controller.DetailView" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-    <Page title="{i18n>detailTitle}">
+    <Page title="{i18n>Antragdetails}">
         <content>
             <Text id="flag" text="{ReqId}" />
             <Text text="{ReqId}" />
